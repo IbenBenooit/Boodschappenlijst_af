@@ -1,34 +1,41 @@
 ﻿using System;
 
-namespace BoodschappenlijstApp
+public class ProductInfo
 {
-    public class ProductInfo
-    {
-        public string Naam { get; set; } = string.Empty;
-        public decimal Prijs { get; set; }
-        public string Winkel { get; set; } = string.Empty;
-        public DateTime LaatsteUpdate { get; set; } = DateTime.Now;
-        public bool IsOnlineOpgehaald { get; set; } = false;
-        public decimal KortingPercentage { get; set; } = 0;
-        public bool IsInAanbieding { get; set; } = false;
+    public string Naam { get; set; } = string.Empty;
+    public decimal Prijs { get; set; }
+    public string Winkel { get; set; } = string.Empty;
+    public DateTime LaatsteUpdate { get; set; } = DateTime.Now;
+    public bool IsOnlineOpgehaald { get; set; } = false;
+    public decimal KortingPercentage { get; set; } = 0;
+    public bool IsInAanbieding { get; set; } = false;
 
-        // Eenvoudige property voor prijs na korting
-        public decimal PrijsNaKorting
+    // Virtual property om overschrijving mogelijk te maken
+    public virtual decimal PrijsNaKorting
+    {
+        get
         {
-            get
+            if (IsInAanbieding && KortingPercentage > 0)
             {
-                if (IsInAanbieding && KortingPercentage > 0)
-                {
-                    decimal korting = Prijs * (KortingPercentage / 100m);
-                    return Prijs - korting;
-                }
-                return Prijs;
+                decimal korting = Prijs * (KortingPercentage / 100m);
+                return Prijs - korting;
             }
+            return Prijs;
         }
     }
+}
 
-    public class Product
+// Afgeleide klasse die PrijsNaKorting overschrijft
+public class PremiumProductInfo : ProductInfo
+{
+    public override decimal PrijsNaKorting
     {
-        public string Naam { get; set; } = string.Empty;
+        get
+        {
+            // Pas een extra 5% korting toe op de berekende prijs
+            decimal basisPrijs = base.PrijsNaKorting;
+            decimal extraKorting = basisPrijs * 0.05m;
+            return basisPrijs - extraKorting;
+        }
     }
 }
