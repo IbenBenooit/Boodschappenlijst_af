@@ -1,0 +1,644 @@
+﻿{
+  "melk": {
+    "Albert Heijn": {
+      "Naam": "Melk",
+      "Prijs": 1.50,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 20.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.200
+    },
+    "Jumbo": {
+      "Naam": "Melk",
+      "Prijs": 1.40,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.40
+    },
+    "Lidl": {
+      "Naam": "Melk",
+      "Prijs": 1.30,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.30
+    },
+    "Aldi": {
+      "Naam": "Melk",
+      "Prijs": 1.20,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.20
+    }
+  },
+  "brood": {
+    "Albert Heijn": {
+      "Naam": "Brood",
+      "Prijs": 1.20,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.20
+    },
+    "Jumbo": {
+      "Naam": "Brood",
+      "Prijs": 1.50,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.50
+    },
+    "Lidl": {
+      "Naam": "Brood",
+      "Prijs": 1.40,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 15.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.1900
+    },
+    "Aldi": {
+      "Naam": "Brood",
+      "Prijs": 1.30,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.30
+    }
+  },
+  "kaas": {
+    "Albert Heijn": {
+      "Naam": "Kaas",
+      "Prijs": 1.30,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.30
+    },
+    "Jumbo": {
+      "Naam": "Kaas",
+      "Prijs": 1.20,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 25.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 0.9000
+    },
+    "Lidl": {
+      "Naam": "Kaas",
+      "Prijs": 1.50,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.50
+    },
+    "Aldi": {
+      "Naam": "Kaas",
+      "Prijs": 1.40,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.40
+    }
+  },
+  "eieren": {
+    "Albert Heijn": {
+      "Naam": "Eieren",
+      "Prijs": 1.40,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.40
+    },
+    "Jumbo": {
+      "Naam": "Eieren",
+      "Prijs": 1.30,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.30
+    },
+    "Lidl": {
+      "Naam": "Eieren",
+      "Prijs": 1.20,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.20
+    },
+    "Aldi": {
+      "Naam": "Eieren",
+      "Prijs": 1.50,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 30.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.050
+    }
+  },
+  "aardappelen": {
+    "Albert Heijn": {
+      "Naam": "Aardappelen",
+      "Prijs": 2.25,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 10.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 2.025
+    },
+    "Jumbo": {
+      "Naam": "Aardappelen",
+      "Prijs": 2.50,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 2.50
+    },
+    "Lidl": {
+      "Naam": "Aardappelen",
+      "Prijs": 2.15,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 2.15
+    },
+    "Aldi": {
+      "Naam": "Aardappelen",
+      "Prijs": 2.30,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 2.30
+    }
+  },
+  "koekjes": {
+    "Albert Heijn": {
+      "Naam": "Koekjes",
+      "Prijs": 1.75,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.75
+    },
+    "Jumbo": {
+      "Naam": "Koekjes",
+      "Prijs": 1.65,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 20.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.320
+    },
+    "Lidl": {
+      "Naam": "Koekjes",
+      "Prijs": 1.45,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.45
+    },
+    "Aldi": {
+      "Naam": "Koekjes",
+      "Prijs": 1.55,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.55
+    }
+  },
+  "koffie": {
+    "Albert Heijn": {
+      "Naam": "Koffie",
+      "Prijs": 3.95,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 3.95
+    },
+    "Jumbo": {
+      "Naam": "Koffie",
+      "Prijs": 3.85,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 3.85
+    },
+    "Lidl": {
+      "Naam": "Koffie",
+      "Prijs": 3.50,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 15.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 2.9750
+    },
+    "Aldi": {
+      "Naam": "Koffie",
+      "Prijs": 3.65,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 3.65
+    }
+  },
+  "pasta": {
+    "Albert Heijn": {
+      "Naam": "Pasta",
+      "Prijs": 1.20,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.20
+    },
+    "Jumbo": {
+      "Naam": "Pasta",
+      "Prijs": 1.15,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.15
+    },
+    "Lidl": {
+      "Naam": "Pasta",
+      "Prijs": 0.95,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 0.95
+    },
+    "Aldi": {
+      "Naam": "Pasta",
+      "Prijs": 0.99,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 0.99
+    }
+  },
+  "yoghurt": {
+    "Albert Heijn": {
+      "Naam": "Yoghurt",
+      "Prijs": 1.35,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.35
+    },
+    "Jumbo": {
+      "Naam": "Yoghurt",
+      "Prijs": 1.25,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 10.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.125
+    },
+    "Lidl": {
+      "Naam": "Yoghurt",
+      "Prijs": 1.15,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.15
+    },
+    "Aldi": {
+      "Naam": "Yoghurt",
+      "Prijs": 1.10,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.10
+    }
+  },
+  "chocolade": {
+    "Albert Heijn": {
+      "Naam": "Chocolade",
+      "Prijs": 1.95,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.95
+    },
+    "Jumbo": {
+      "Naam": "Chocolade",
+      "Prijs": 1.85,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.85
+    },
+    "Lidl": {
+      "Naam": "Chocolade",
+      "Prijs": 1.65,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.65
+    },
+    "Aldi": {
+      "Naam": "Chocolade",
+      "Prijs": 1.75,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 15.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.4875
+    }
+  },
+  "rijst": {
+    "Albert Heijn": {
+      "Naam": "Rijst",
+      "Prijs": 2.15,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 2.15
+    },
+    "Jumbo": {
+      "Naam": "Rijst",
+      "Prijs": 2.05,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 2.05
+    },
+    "Lidl": {
+      "Naam": "Rijst",
+      "Prijs": 1.85,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.85
+    },
+    "Aldi": {
+      "Naam": "Rijst",
+      "Prijs": 1.95,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.95
+    }
+  },
+  "wasmiddel": {
+    "Albert Heijn": {
+      "Naam": "Wasmiddel",
+      "Prijs": 5.95,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 25.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 4.4625
+    },
+    "Jumbo": {
+      "Naam": "Wasmiddel",
+      "Prijs": 5.85,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 5.85
+    },
+    "Lidl": {
+      "Naam": "Wasmiddel",
+      "Prijs": 5.45,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 5.45
+    },
+    "Aldi": {
+      "Naam": "Wasmiddel",
+      "Prijs": 5.55,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 5.55
+    }
+  },
+  "tandpasta": {
+    "Albert Heijn": {
+      "Naam": "Tandpasta",
+      "Prijs": 1.85,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.85
+    },
+    "Jumbo": {
+      "Naam": "Tandpasta",
+      "Prijs": 1.75,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.75
+    },
+    "Lidl": {
+      "Naam": "Tandpasta",
+      "Prijs": 1.55,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 10.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.395
+    },
+    "Aldi": {
+      "Naam": "Tandpasta",
+      "Prijs": 1.65,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.65
+    }
+  },
+  "cola": {
+    "Albert Heijn": {
+      "Naam": "Cola",
+      "Prijs": 1.30,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 20.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.040
+    },
+    "Jumbo": {
+      "Naam": "Cola",
+      "Prijs": 1.40,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.40
+    },
+    "Lidl": {
+      "Naam": "Cola",
+      "Prijs": 1.30,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.30
+    },
+    "Aldi": {
+      "Naam": "Cola",
+      "Prijs": 1.20,
+      "Winkel": "Aldi",
+      "LaatsteUpdate": "2025-05-06T10:30:00",
+      "IsOnlineOpgehaald": true,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 1.20
+    }
+  },
+  "haardroger": {
+    "Albert Heijn": {
+      "Naam": "Haardroger",
+      "Prijs": 25.0,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-18T14:41:20.9384086+02:00",
+      "IsOnlineOpgehaald": false,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 25.0
+    },
+    "Jumbo": {
+      "Naam": "Haardroger",
+      "Prijs": 25.0,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-18T14:56:19.2022725+02:00",
+      "IsOnlineOpgehaald": false,
+      "KortingPercentage": 10.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 22.50
+    },
+    "Lidl": {
+      "Naam": "Haardroger",
+      "Prijs": 22.0,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-18T15:08:34.2553516+02:00",
+      "IsOnlineOpgehaald": false,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 22.0
+    }
+  },
+  "mentos": {
+    "Albert Heijn": {
+      "Naam": "Mentos",
+      "Prijs": 2.0,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-18T15:47:01.8717146+02:00",
+      "IsOnlineOpgehaald": false,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 2.0
+    },
+    "Jumbo": {
+      "Naam": "Mentos",
+      "Prijs": 2.0,
+      "Winkel": "Jumbo",
+      "LaatsteUpdate": "2025-05-18T15:55:52.1063711+02:00",
+      "IsOnlineOpgehaald": false,
+      "KortingPercentage": 5.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.90
+    }
+  }
+}
