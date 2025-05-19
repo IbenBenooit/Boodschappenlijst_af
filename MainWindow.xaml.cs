@@ -12,6 +12,7 @@ namespace BoodschappenlijstApp
     public partial class MainWindow : Window
     {
         private Dictionary<string, Dictionary<string, ProductInfo>> productPrijzen;
+        private bool heeftKlantenkaart = false;
 
         // Gebruik exact het opgegeven pad
         private readonly string jsonDataPath = @"C:\Users\ibenb\Documents\ICT\tweede semester 2025\project\project 4\boodschappenlijst\bin\Debug\net8.0-windows\productDataaa.json";
@@ -76,6 +77,18 @@ namespace BoodschappenlijstApp
             ToonProductenButton_Click(sender, e);
         }
 
+        // Event handler voor klantenkaart checkbox
+        private void KlantenkaartCheckBox_CheckedChanged(object sender, RoutedEventArgs e)
+        {
+            heeftKlantenkaart = KlantenkaartCheckBox.IsChecked ?? false;
+
+            // Update de weergave indien nodig
+            if (ProductenListView.ItemsSource != null)
+            {
+                ToonProductenButton_Click(sender, e);
+            }
+        }
+
         private void ToonProductenButton_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -109,6 +122,25 @@ namespace BoodschappenlijstApp
                     // Haal het product uit de geselecteerde winkel
                     var productInWinkel = winkelPrijzen[geselecteerdeWinkel];
 
+                    // Indien klantenkaart aangevinkt, gebruik PremiumProductInfo
+                    if (heeftKlantenkaart)
+                    {
+                        // Maak een PremiumProductInfo-object met dezelfde eigenschappen
+                        var premiumProduct = new PremiumProductInfo
+                        {
+                            Naam = productInWinkel.Naam,
+                            Prijs = productInWinkel.Prijs,
+                            Winkel = productInWinkel.Winkel,
+                            LaatsteUpdate = productInWinkel.LaatsteUpdate,
+                            IsOnlineOpgehaald = productInWinkel.IsOnlineOpgehaald,
+                            KortingPercentage = productInWinkel.KortingPercentage,
+                            IsInAanbieding = productInWinkel.IsInAanbieding,
+                            HeeftKlantenkaart = true
+                        };
+
+                        productInWinkel = premiumProduct;
+                    }
+
                     // Bereken de effectieve prijs na korting
                     decimal prijsInGeselecteerdeWinkel = productInWinkel.PrijsNaKorting;
 
@@ -120,8 +152,27 @@ namespace BoodschappenlijstApp
                         if (winkel.Key == geselecteerdeWinkel)
                             continue;
 
+                        // Product in andere winkel, pas ook klantenkaart toe indien nodig
+                        var productInAndereWinkel = winkel.Value;
+                        if (heeftKlantenkaart)
+                        {
+                            var premiumProduct = new PremiumProductInfo
+                            {
+                                Naam = productInAndereWinkel.Naam,
+                                Prijs = productInAndereWinkel.Prijs,
+                                Winkel = productInAndereWinkel.Winkel,
+                                LaatsteUpdate = productInAndereWinkel.LaatsteUpdate,
+                                IsOnlineOpgehaald = productInAndereWinkel.IsOnlineOpgehaald,
+                                KortingPercentage = productInAndereWinkel.KortingPercentage,
+                                IsInAanbieding = productInAndereWinkel.IsInAanbieding,
+                                HeeftKlantenkaart = true
+                            };
+
+                            productInAndereWinkel = premiumProduct;
+                        }
+
                         // Prijs in andere winkel
-                        decimal prijsInAndereWinkel = winkel.Value.PrijsNaKorting;
+                        decimal prijsInAndereWinkel = productInAndereWinkel.PrijsNaKorting;
 
                         // Als het product ergens anders goedkoper is
                         if (prijsInAndereWinkel < prijsInGeselecteerdeWinkel)
@@ -145,7 +196,8 @@ namespace BoodschappenlijstApp
                 ProductenListView.ItemsSource = goedkoopsteProducten;
 
                 // Update de statusbalk
-                StatusTextBlock.Text = $"{goedkoopsteProducten.Count} producten zijn het goedkoopst bij {geselecteerdeWinkel}.";
+                string klantenkaartInfo = heeftKlantenkaart ? " (met 5% klantenkaartkorting)" : "";
+                StatusTextBlock.Text = $"{goedkoopsteProducten.Count} producten zijn het goedkoopst bij {geselecteerdeWinkel}{klantenkaartInfo}.";
             }
             catch (Exception ex)
             {

@@ -28,14 +28,24 @@ public class ProductInfo
 // Afgeleide klasse die PrijsNaKorting overschrijft
 public class PremiumProductInfo : ProductInfo
 {
+    // Klantenkaart eigenschap toevoegen
+    public bool HeeftKlantenkaart { get; set; } = false;
+
     public override decimal PrijsNaKorting
     {
         get
         {
-            // Pas een extra 5% korting toe op de berekende prijs
+            // Bereken eerst de basis prijs na normale korting
             decimal basisPrijs = base.PrijsNaKorting;
-            decimal extraKorting = basisPrijs * 0.05m;
-            return basisPrijs - extraKorting;
+
+            // Als de gebruiker een klantenkaart heeft, pas extra 5% korting toe
+            if (HeeftKlantenkaart)
+            {
+                decimal extraKorting = basisPrijs * 0.05m;
+                return basisPrijs - extraKorting;
+            }
+
+            return basisPrijs;
         }
     }
 }

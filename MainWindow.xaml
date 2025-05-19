@@ -35,31 +35,41 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Column="0" 
-                       Text="Selecteer Winkel:" 
-                       VerticalAlignment="Center" 
-                       Margin="0,0,10,0"
-                       FontSize="16"/>
+               Text="Selecteer Winkel:" 
+               VerticalAlignment="Center" 
+               Margin="0,0,10,0"
+               FontSize="16"/>
 
             <ComboBox x:Name="WinkelComboBox" 
-                      Grid.Column="1" 
-                      Margin="0,0,10,0" 
-                      Padding="10,5"
-                      FontSize="16"
-                      SelectionChanged="WinkelComboBox_SelectionChanged">
+              Grid.Column="1" 
+              Margin="0,0,10,0" 
+              Padding="10,5"
+              FontSize="16"
+              SelectionChanged="WinkelComboBox_SelectionChanged">
                 <ComboBoxItem>Albert Heijn</ComboBoxItem>
                 <ComboBoxItem>Jumbo</ComboBoxItem>
                 <ComboBoxItem>Lidl</ComboBoxItem>
                 <ComboBoxItem>Aldi</ComboBoxItem>
             </ComboBox>
 
+            <!-- Nieuwe klantenkaart checkbox toevoegen -->
+            <CheckBox x:Name="KlantenkaartCheckBox" 
+              Grid.Column="2" 
+              Content="Ik heb een klantenkaart" 
+              VerticalAlignment="Center" 
+              Margin="0,0,10,0"
+              Checked="KlantenkaartCheckBox_CheckedChanged"
+              Unchecked="KlantenkaartCheckBox_CheckedChanged"/>
+
             <Button x:Name="ToonProductenButton" 
-                    Grid.Column="2" 
-                    Content="Toon Goedkoopste Producten" 
-                    Padding="15,8"
-                    Click="ToonProductenButton_Click"/>
+            Grid.Column="3" 
+            Content="Toon Goedkoopste Producten" 
+            Padding="15,8"
+            Click="ToonProductenButton_Click"/>
         </Grid>
 
         <!-- Producten Resultaten -->

@@ -624,11 +624,11 @@
       "Naam": "Mentos",
       "Prijs": 2.0,
       "Winkel": "Albert Heijn",
-      "LaatsteUpdate": "2025-05-18T15:47:01.8717146+02:00",
+      "LaatsteUpdate": "2025-05-18T16:46:59.3536075+02:00",
       "IsOnlineOpgehaald": false,
-      "KortingPercentage": 0.0,
-      "IsInAanbieding": false,
-      "PrijsNaKorting": 2.0
+      "KortingPercentage": 10.0,
+      "IsInAanbieding": true,
+      "PrijsNaKorting": 1.80
     },
     "Jumbo": {
       "Naam": "Mentos",
@@ -638,7 +638,29 @@
       "IsOnlineOpgehaald": false,
       "KortingPercentage": 5.0,
       "IsInAanbieding": true,
-      "PrijsNaKorting": 1.90
+      "PrijsNaKorting": 1.900
+    },
+    "Lidl": {
+      "Naam": "Mentos",
+      "Prijs": 2.0,
+      "Winkel": "Lidl",
+      "LaatsteUpdate": "2025-05-18T16:21:40.6918686+02:00",
+      "IsOnlineOpgehaald": false,
+      "KortingPercentage": 10.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 2.0
+    }
+  },
+  "fanta": {
+    "Albert Heijn": {
+      "Naam": "Fanta",
+      "Prijs": 3.0,
+      "Winkel": "Albert Heijn",
+      "LaatsteUpdate": "2025-05-19T17:12:29.1672349+02:00",
+      "IsOnlineOpgehaald": false,
+      "KortingPercentage": 0.0,
+      "IsInAanbieding": false,
+      "PrijsNaKorting": 3.0
     }
   }
 }
